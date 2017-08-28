@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>927</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ders Takip</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img.qrc">
+    <normaloff>:/img/lesson.png</normaloff>:/img/lesson.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Dersler</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="derslerCombo">
+          <property name="minimumSize">
+           <size>
+            <width>76</width>
+            <height>0</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>Ders1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ders2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="silButton">
+          <property name="text">
+           <string>Sil</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="kaydetButton">
+          <property name="text">
+           <string>Kaydet</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Yeni Sayfa</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView">
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="baslik">
+        <property name="placeholderText">
+         <string>Başlık</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="kod">
+        <property name="placeholderText">
+         <string>Kod</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="cikti">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="placeholderText">
+         <string>Çıktı</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="aciklama">
+        <property name="placeholderText">
+         <string>Açıklama</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>927</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDosya">
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="actionDers_Ekle"/>
+    <addaction name="actionDersi_Sil"/>
+    <addaction name="actionPDF_ye_D_n_t_r"/>
+   </widget>
+   <addaction name="menuDosya"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDers_Ekle">
+   <property name="text">
+    <string>Ders Ekle</string>
+   </property>
+  </action>
+  <action name="actionDersi_Sil">
+   <property name="text">
+    <string>Dersi Sil</string>
+   </property>
+  </action>
+  <action name="actionKapat">
+   <property name="text">
+    <string>Kapat</string>
+   </property>
+  </action>
+  <action name="actionSayfa_Ekle">
+   <property name="text">
+    <string>Sayfa Ekle</string>
+   </property>
+  </action>
+  <action name="actionPDF_ye_D_n_t_r">
+   <property name="text">
+    <string>Html Yap</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
